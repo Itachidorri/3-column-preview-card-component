@@ -1,0 +1,126 @@
+/*Resetting default margins and paddings to zero*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+/*Writing some custom properties*/
+:root{
+  --clr-primary:white;
+  --clr-secondary:rgba(220, 221, 222,1);
+  --clr-accent-1: rgba(227, 137, 2,1);
+  --clr-accent-2: rgba(34, 105, 120,1);
+  --clr-accent-3: rgba(7, 64, 61,1);
+
+  --fs-s: .9rem;
+  --fs-m: 2rem;
+  --fs-l: 2rem;
+
+  --fw-n: 300;
+  --fw-b: 600;
+
+  --ff-primary: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode',
+   'Lucida Sans', Tahoma, sans-serif;
+  --ff-secondary: 'Arial Narrow', Arial, sans-serif;
+
+  --spacer-horizontal-n: 2rem;
+  --spacer-vertical-n: 1.5rem;
+  --spacer-vertical-m:calc(var(--spacer-vertical-n)*1.5);
+}
+
+
+/*utility classes*/
+.flex{
+  display: flex;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.capitalize{
+  text-transform: capitalize;
+}
+
+
+/*Styling section and dominant styles throughout the page*/
+.car-types{
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  color: var(--clr-primary);
+  font-family: var(--ff-primary);
+}
+
+h1{
+  font-family: var(--ff-secondary);
+  font-size:var(--fs-m);
+}
+
+p{
+  color:var(--clr-secondary);
+  font-size: var(--fs-s);
+  line-height: calc(var(--spacer-vertical-n)/1.2);
+}
+
+/*Styling card container and cards*/
+.card-container{
+  max-width: 50rem;
+  min-height: 24rem;
+  border-radius: .5rem;
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.card{
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--spacer-vertical-m) var(--spacer-horizontal-n);
+}
+
+.card-content{
+  flex-direction: column;
+  gap:calc(var(--spacer-vertical-n)/1.5);
+}
+
+
+.card:nth-child(1){
+  background-color: var(--clr-accent-1);
+}
+
+.card:nth-child(2){
+  background-color: var(--clr-accent-2);
+}
+
+.card:nth-child(3){
+  background-color: var(--clr-accent-3);
+}
+
+
+/*Styling button*/
+.btn{
+  align-self: flex-start;
+  padding: calc(var(--spacer-vertical-n)/2) var(--spacer-horizontal-n);
+  border-radius: 3rem;
+  border-style: none;
+  margin-top: 2rem;
+}
+
+.btn:nth-child(1){
+  color: var(--clr-accent-1);
+}
+
+@media (max-width:600px) {
+  .card-container{
+    flex-direction: column;
+    max-width: 20rem;
+  }
+
+  .car-types{
+    align-items: flex-start;
+  }
+}
