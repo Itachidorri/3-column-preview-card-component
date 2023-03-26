@@ -110,10 +110,15 @@ p{
   margin-top: 2rem;
 }
 
+
+/*Unable to color text inside buttons due to specifity issue.
+advices welcome*/
 .btn:nth-child(1){
   color: var(--clr-accent-1);
 }
 
+
+/*Styling the page for mobile devices*/
 @media (max-width:600px) {
   .card-container{
     flex-direction: column;
