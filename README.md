@@ -49,7 +49,7 @@ my learning journey will also be provided for fellow newbie learners.
 
 - HTML5
 - Flexbox
-- CSS
+- CSS3
 - [CSS font stack](https://www.cssfontstack.com/) - For font stacks, this shows the applicability of fonts in windows and mac OS.
 
 
