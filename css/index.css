@@ -112,9 +112,9 @@ p{
 
 
 /*Unable to color text inside buttons due to specifity issue.
-advices welcome*/
-.btn:nth-child(1){
-  color: var(--clr-accent-1);
+Solutions are welcome*/
+.card > .btn:nth-child(3){
+  color: var(--clr-accent-3);
 }
 
 
