@@ -107,8 +107,7 @@ p{
 }
 
 
-/*Unable to color text inside buttons due to specifity issue.
-Solutions are welcome*/
+/*Styling buttons*/
 .card:nth-child(1) button{
   color: var(--clr-accent-1);
 }
