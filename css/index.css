@@ -79,14 +79,9 @@ p{
 .card{
   flex-direction: column;
   justify-content: space-between;
+  gap: 1rem;
   padding: var(--spacer-vertical-m) var(--spacer-horizontal-n);
 }
-
-.card-content{
-  flex-direction: column;
-  gap:calc(var(--spacer-vertical-n)/1.5);
-}
-
 
 .card:nth-child(1){
   background-color: var(--clr-accent-1);
@@ -108,13 +103,28 @@ p{
   border-radius: 3rem;
   border-style: none;
   margin-top: 2rem;
+  border: white 1px solid;
 }
 
 
 /*Unable to color text inside buttons due to specifity issue.
 Solutions are welcome*/
-.card > .btn:nth-child(3){
+.card:nth-child(1) button{
+  color: var(--clr-accent-1);
+}
+
+.card:nth-child(2) button{
+  color: var(--clr-accent-2);
+}
+
+.card:nth-child(3) button{
   color: var(--clr-accent-3);
+}
+
+.card button:hover{
+  color: white;
+  background-color: transparent;
+  transition: 0.3s;
 }
 
 
